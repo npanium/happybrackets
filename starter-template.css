@@ -1,0 +1,170 @@
+body {
+    padding-top: 5rem;
+}
+
+.starter-template {
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+
+:root {
+    --black: #3a3a3a;
+    --pink: #F58CAF;
+    --yellow: #FFC148;
+    --blue: #4D77F8;
+}
+
+a.btn {
+    background-color: var(--black);
+    font-family: Noto Sans;
+    color: #ffff;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+a.btn:hover {
+    color: var(--black);
+    background-color: #ffff;
+    border-color: var(--black);
+}
+
+.btnn {
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+    font-family: Noto Sans;
+    font-weight: 500;
+    font-size: 1.25rem;
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.btn-two {
+    color: var(--black);
+    transition: all 0.5s;
+    position: absolute;
+}
+
+.btn-two span {
+    z-index: 2;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-two::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.5s;
+    border-top: 8px solid;
+    border-top-color: var(--pink);
+    border-right: 8px solid;
+    border-right-color: var(--pink);
+}
+
+.btn-two::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.5s;
+    border: solid;
+    border-color: var(--yellow);
+    border-top: 8px solid;
+    border-top-color: var(--yellow);
+    border-right: 8px solid;
+    border-right-color: var(--yellow);
+}
+
+.btn-two:hover::before {
+    transform: translate(10px,-10px);
+}
+
+.btn-two:hover {
+    background-color: var(--yellow);
+}
+
+p {
+    font-family: Noto Sans;
+    color: var(--black);
+    font-size: 18px;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+@font-face {
+    font-family: 'ChicagoFLF';
+    src: url('assets/ChicagoFLF.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+h1,
+.h1 {
+    font-size: 2.5rem;
+    font-family: ChicagoFLF;
+    color: var(--black);
+    margin-bottom: 0;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+    font-family: Noto Sans;
+}
+
+h2,
+.h2 {
+    font-size: 2rem;
+    font-family: ChicagoFLF;
+    color: var(--black);
+}
+
+svg.btn-youtube {
+    position: absolute;
+    margin-left: -28px;
+    margin-top: -20px;
+    fill: #282828;
+    fill-opacity: 0.85;
+    color: white;
+    width: 55px;
+    height: 40px;
+    z-index: 24;
+    top: 50%;
+    left: 50%;
+}
+
+svg.btn-youtube:hover {
+    fill: #ff0000;
+    fill-opacity: 1;
+}
+
+svg .image {
+    fill: currentColor;
+}
+
+.nav-item {
+}
+
+.nav-item a {
+    color: var(--black);
+}
+
+.nav-item a:hover {
+    color: var(--pink);
+}
